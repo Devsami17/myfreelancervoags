@@ -26,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body >
         <header>
             <div class="header-1 container">
            <div class="col-lg-1">
@@ -272,7 +272,7 @@
     <emoji-picker id="emojiPicker" style="display:none;"></emoji-picker>
 </div>
 <div class="chat-area-footer-2">
-    <div class="chat-option d-flex">
+    <div class="chat-option justify-content-normal align-items-center d-flex">
 <input type="file" class="d-none" id="fileInput">
 <button class="special-icon"  id="emojiButton">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 16" fill="#74767E"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.2 1.485a6.515 6.515 0 1 0 0 13.03 6.515 6.515 0 0 0 0-13.03ZM.2 8a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"></path><path d="M5.231 8a.99.99 0 1 0 0-1.98.99.99 0 0 0 0 1.98ZM11.17 8a.99.99 0 1 0 0-1.98.99.99 0 0 0 0 1.98Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.22 9.237c.41 0 .743.332.743.742a1.237 1.237 0 0 0 2.474 0 .742.742 0 0 1 1.485 0 2.722 2.722 0 1 1-5.443 0c0-.41.332-.742.742-.742Z"></path></svg>
@@ -281,6 +281,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 16" fill="#74767E"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.689 1.485A2.208 2.208 0 0 0 1.475 3.71v7.258A3.527 3.527 0 0 0 5 14.515a3.527 3.527 0 0 0 3.525-3.546V2.722c0-.41.33-.743.737-.743a.74.74 0 0 1 .738.743v8.247C10 13.754 7.768 16 5 16s-5-2.246-5-5.03V3.71A3.688 3.688 0 0 1 3.689 0a3.688 3.688 0 0 1 3.688 3.711v6.598A2.368 2.368 0 0 1 5 12.701a2.368 2.368 0 0 1-2.377-2.392V4.701c0-.41.33-.742.738-.742a.74.74 0 0 1 .737.742v5.608c0 .514.391.908.902.908.51 0 .902-.394.902-.908V3.711c0-1.24-.982-2.226-2.213-2.226Z"></path></svg>
 </button>
 <div class="special-line"></div>
+<button class="create-an-offerbtn" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Create an offer</button>
     </div>
     <div class="send-message">
  <button>Send</button>
@@ -291,6 +292,27 @@
        
     </div>
 </section>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select a Gig</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gig-box" data-bs-dismiss="modal">
+              <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/381932271/original/2ef9d01288dfef80e58de7e4dade0775b061aec5.jpg" alt="not">
+              <p>I will build website development create website design as WordPress</p>
+          </div>
+          <div class="gig-box" data-bs-dismiss="modal">
+              <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/381932271/original/2ef9d01288dfef80e58de7e4dade0775b061aec5.jpg" alt="not">
+              <p>I will build website development create website design as WordPress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </main>
 
 <footer class="container">
@@ -347,6 +369,7 @@
             </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+
 document.addEventListener('DOMContentLoaded', function() {
     var messages = document.querySelectorAll('.single-message');
 

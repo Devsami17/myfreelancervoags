@@ -540,6 +540,9 @@ section{
     }
 }
 @media only screen and (min-width:1800px){
+    .section-15 .chat-area-main{
+        height: 470px !important;
+    }
 .sec-2-img{
     height: 250px !important;
 }
@@ -1158,6 +1161,7 @@ font-weight: 700;
     font-family: var(--font);
     height: 47px;
     text-transform: none;
+    font-weight:600;
     
 }
 .section-10 .filter-parent-one div:nth-child(1) {
@@ -2148,5 +2152,43 @@ height: 300px;
 }
 .section-15 .dropdown-item{
     font-family: var(--font);
+    font-size: 14px;
+}
+.create-an-offerbtn{
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    border: none ;
+    padding: 0 10px;
+    outline: none   ;
+    font-size: 12px;
+    height: 30px;
+    font-family: var(--font);
+
+}
+.modal-title{
+    font-family: var(--font) !important;
+    font-weight: 600;
+}
+.modal-body .gig-box{
+    border: 1px solid var(--grey);
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.modal-body .gig-box:hover{
+    background-color: var(--selected-chat);
+}
+.modal-body .gig-box img{
+    height: 40px;
+    width: auto;
+    border-radius: 6px;
+}
+.modal-body .gig-box p{
+    margin-bottom: 0px;
+    font-family: var(--font);
+    margin-left: 10px;
     font-size: 14px;
 }
