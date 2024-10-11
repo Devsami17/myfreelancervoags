@@ -453,8 +453,8 @@ width: 60% !important;
     }
     .section-12 .selected-skill{
         font-size: 12px !important;
-        width: 100%;
-    min-width:95% !important;
+        width: 80%;
+    min-width:80% !important;
     }
     .section-12 .single-job-box .job-title h3 {
         font-size: 14px !important;
