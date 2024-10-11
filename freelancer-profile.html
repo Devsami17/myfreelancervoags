@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Freelancer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/x-icon" href="https://myfreelancer.voags.com/fav.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="header-1 container">
+            <div class="col-lg-1">
+                <img onclick="window.location='index.html'" src="assets/Images/main-logo.png" alt="Not found" />
+            </div>
+            <div class="col-lg-5 second-container">
+                <a href="Hire-Talent.html">Hire Talent</a>
+                <a href="FindWork.html">Find Work</a>
+                <a href="https://support.myfreelancer.com/">Support</a>
+                <a href="browse-categories.html">Browse Categories</a>
+            </div>
+            <div class="col-lg-5 third-container">
+                <div class="input-box">
+                    <div class="search-bar">
+                        <div class="search-bar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                                role="img">
+                                <path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                    stroke-width="1.5"
+                                    d="M10.688 18.377a7.688 7.688 0 100-15.377 7.688 7.688 0 000 15.377zm5.428-2.261L21 21">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="search-bar-input">
+                            <input type="text" placeholder="Search" />
+                        </div>
+                    </div>
+                </div>
+                <div class="account-options">
+                    <span onclick="window.location='Login.html'">Log in</span>
+                    <button onclick="window.location='register.html'">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="responsive-header container">
+            <div class="d-flex gap-2 align-items-center">
+                <a class="text-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample"><i class="bi bi-list"></i></a>
+                <img onclick="window.location='index.html'" src="assets/Images/main-logo.png" alt="Not found" />
+            </div>
+            <div class="d-flex gap-3 justify-content-normal align-items-center">
+                <a href="register.html">Sign Up</a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+                        role="img">
+                        <path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"
+                            d="M10.688 18.377a7.688 7.688 0 100-15.377 7.688 7.688 0 000 15.377zm5.428-2.261L21 21">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+        <div class="header-2">
+            <div class="slider-container container-xxl">
+                <button id="prevBtn" class="slider-btn prev-btn">
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <div class="slider-wrapper">
+                    <ul class="slider">
+                        <li onclick="window.location='Category-Programming&Tech.html'">
+                            Programming & Tech
+                        </li>
+                        <li onclick="window.location='Category-DigitalMarketing.html'">
+                            Digital Marketing
+                        </li>
+                        <li onclick="window.location='Category-Video&Animation.html'">
+                            Video & Animation
+                        </li>
+                        <li onclick="window.location='Category-Writing&Translation.html'">
+                            Writing & Translation
+                        </li>
+                        <li onclick="window.location='Category-Music&Audio.html'">
+                            Music & Audio
+                        </li>
+                        <li onclick="window.location='Category-Business.html'">
+                            Business
+                        </li>
+                        <li onclick="window.location='Category-Finance.html'">Finance</li>
+                        <li onclick="window.location='Category-AIServices.html'">
+                            AI Services
+                        </li>
+                        <li onclick="window.location='Category-PersonalGrowth.html'">
+                            Personal Growth
+                        </li>
+                        <li onclick="window.location='Category-Consulting.html'">
+                            Consulting
+                        </li>
+                        <li onclick="window.location='Category-Photography.html'">
+                            Photography
+                        </li>
+                    </ul>
+                </div>
+                <button id="nextBtn" class="slider-btn next-btn">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <img onclick="window.location='index.html'" src="assets/Images/main-logo.png" height="40px"
+                        alt="not found" />
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li onclick="window.location='Hire-Talent.html'">Hire Talent</li>
+                    <li onclick="window.location='FindWork.html'">Find Work</li>
+                    <li onclick="window.location='https://support.myfreelancer.com/'">
+                        Support
+                    </li>
+                    <li onclick="window.location='browse-categories.html'">
+                        Browse Categories
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas2 offcanvas-end" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    <input type="search" placeholder="Search" />
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <ul>
+                        <li id="projects" class="active">Projects</li>
+                        <li id="jobs">Jobs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-17 container">
+            <div class="profile-parent">
+                <div class="profile-head d-flex justify-content-between">
+                    <div class="d-flex justify-content-normal align-items-center gap-3">
+                        <div class="profile-image position-relative">
+                            <img src="https://www.upwork.com/profile-portraits/c1R-5zHY282ungKXupbLYXUFCduJRAFAfUPYfLmuMmPD-8Jzo1HG38waVzO1Ghjj8H"
+                                alt="not found" />
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4>Anas Sohail <i class="fa-solid fa-circle-check"></i></h4>
+                            <div class="d-flex location-area justify-content-normal align-items-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Karachi,Pakistan - 10:37 pm local time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form action="dashboard.html">
+                             <button type="submit" >Profile Setting</button>
+                        </form>
+                       
+                    </div>
+                </div>
+                <div class="profile-body">
+                    <div class="d-flex mt-4 gap-4">
+                        <div class="earning-boxes">
+                            <p>$45</p>
+                            <p>Total earning</p>
+                        </div>
+                        <div class="earning-boxes">
+                            <p>2</p>
+                            <p>Total jobs</p>
+                        </div>
+                        <div class="earning-boxes">
+                            <p>4</p>
+                            <p>Total hours</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="profile-title">
+                            Expert PHP & Laravel Developer | Shopify & WordPress Specialist
+                        </h5>
+                        <p class="profile-description">
+                            🏆Top Rated Freelancer 💎5+ Years of Experience 🚀400+ Projects
+                            Completed Welcome 👋 , I am accomplished PHP & LARAVEL developer
+                            with a specialization in both Shopify and WordPress , with 5+
+                            years experince in developing
+                            modern,functional,ecommerce,business and responsive website with
+                            modern technologies.I have strong experince in developing web
+                            applications with PHP & LARAVEL And WORDPRESS . ⭐️ MY SKILLS :
+                            ✅ Create Shopify Store & Website ✅ Shopify Theme Customization
+                            & Redesign Store ✅Wordpress Webiste Development & Wordpress Bug
+                            Fixing ✅ Flexbox and Grid (CSS) ✅ Responsiveness /
+                            Mobile-first development / Pixel-perfect development ✅
+                            Ecommerce Website ✅ Business Website ✅ Core Php & Laravel
+                            Framework ✅ Bootstrap, Tailwind CSS & Material UI ✅ JavaScript
+                            (ES6), Jquery & AJAX ✅ HTML, HTML5, CSS, CSS3, SASS (SCSS) ✅
+                            Website Bugs Fixing & Customization ✅ Git (GitHub • GitLab •
+                            Bitbucket) ✅ Cross-browser compatibility (Edge, Safari, Chrome,
+                            Firefox, etc.) ✅ Seo Website & Top Ranking ✅ Payment
+                            Integration ✅ UI / UX design & Development ✅ 24/7 Customer
+                            Service ⭐️ Maintenance and Support ⭐️ Your PHP Laravel or
+                            WordPress website's continued smooth operation is a guarantee I
+                            can offer. From updates to troubleshooting, performance
+                            optimization to bug rectification, I'm your dependable partner.
+                            ⭐️ Consultation and Strategy ⭐️ If you're seeking guidance to
+                            kick start your PHP Laravel or WordPress venture, my ability to
+                            develop comprehensive strategies and roadmaps is at your
+                            disposal. I offer valuable insights into best practices and
+                            technology selection, empowering informed decisions. #Shopify
+                            #ShopifyDeveloper #ShopifyWebsiteDesign #ShopifyDesigner
+                            #ShopifyExpert #ShopifySpecialist #ShopifyAppDeveloper
+                            #Ecommerce #LandingPage #Shopifyexpertupwork #ShopifyPlus
+                            #Ecommercedeveloper #WebDesign #Dropshipping
+                            #FrontEndDevelopment #Topratedplusdeveloper Best Regards, Anas
+                            Sohail
+                        </p>
+                    </div>
+                    <div class="profile-information">
+                        <h3>Skills:</h3>
+                        <div class="w-75">
+                            <a href="#">PHP</a>
+                            <a href="#">Laravel</a>
+                            <a href="#">WordPress</a>
+                            <a href="#">Angular</a>
+                            <a href="#">TypeScript</a>
+                            <a href="#">Web Development</a>
+                            <a href="#">PHP</a>
+                            <a href="#">Laravel</a>
+                            <a href="#">WordPress</a>
+                            <a href="#">Angular</a>
+                            <a href="#">TypeScript</a>
+                            <a href="#">Web Development</a>
+                        </div>
+                        <h3 class="mt-4">Languages:</h3>
+                        <p class="mb-1 profile-languages">English : Fluent</p>
+                        <p class="mb-1 profile-languages">Hindi : Fluent</p>
+                        <p class="mb-0 profile-languages">Urdu : Fluent</p>
+                        <h3 class="mt-4">Verifications</h3>
+                        <p class="mb-1 profile-languages">ID : Verified</p>
+
+                        <h3 class="mt-4">Work History:</h3>
+                        <div>
+                            <p class="text-decoration-underline">Completed jobs (2)</p>
+                            <div class="profile-reviews mb-2">
+                                <h4>
+                                    Looking for an experienced laravel developer for a quick job
+                                </h4>
+                                <div class="d-flex flex-wrap justify-content-normal gap-3 align-items-center">
+                                    <div>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mb-0">5.00</p>
+                                    <p class="mb-0">Jun 9, 2024 - Jul 17, 2024</p>
+                                    <p class="mb-0">$20.00</p>
+                                </div>
+                                <p class="review-description">
+                                    "A good emerging young talented developer. It was great
+                                    working with him."
+                                </p>
+                            </div>
+                            <div class="profile-reviews mb-2">
+                                <h4>
+                                    Looking for an experienced laravel developer for a quick job
+                                </h4>
+                                <div class="d-flex flex-wrap justify-content-normal gap-3 align-items-center">
+                                    <div>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mb-0">5.00</p>
+                                    <p class="mb-0">Jun 9, 2024 - Jul 17, 2024</p>
+                                    <p class="mb-0">$20.00</p>
+                                </div>
+                                <p class="review-description">
+                                    "A good emerging young talented developer. It was great
+                                    working with him."
+                                </p>
+                            </div>
+                            <div class="profile-reviews mb-2">
+                                <h4>
+                                    Looking for an experienced laravel developer for a quick job
+                                </h4>
+                                <div class="d-flex flex-wrap justify-content-normal gap-3 align-items-center">
+                                    <div>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mb-0">5.00</p>
+                                    <p class="mb-0">Jun 9, 2024 - Jul 17, 2024</p>
+                                    <p class="mb-0">$20.00</p>
+                                </div>
+                                <p class="review-description">
+                                    "A good emerging young talented developer. It was great
+                                    working with him."
+                                </p>
+                            </div>
+                            <div class="profile-reviews mb-2">
+                                <h4>
+                                    Looking for an experienced laravel developer for a quick job
+                                </h4>
+                                <div class="d-flex flex-wrap justify-content-normal gap-3 align-items-center">
+                                    <div>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mb-0">5.00</p>
+                                    <p class="mb-0">Jun 9, 2024 - Jul 17, 2024</p>
+                                    <p class="mb-0">$20.00</p>
+                                </div>
+                                <p class="review-description">
+                                    "A good emerging young talented developer. It was great
+                                    working with him."
+                                </p>
+                            </div>
+                            <div class="profile-reviews mb-2">
+                                <h4>
+                                    Looking for an experienced laravel developer for a quick job
+                                </h4>
+                                <div class="d-flex flex-wrap justify-content-normal gap-3 align-items-center">
+                                    <div>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16 5.81285C16 5.98299 15.875 6.14367 15.75 6.26654L12.2596 9.61248L13.0865 14.3384C13.0962 14.4045 13.0962 14.4612 13.0962 14.5274C13.0962 14.7732 12.9808 15 12.7019 15C12.5673 15 12.4327 14.9527 12.3173 14.8866L8 12.656L3.68269 14.8866C3.55769 14.9527 3.43269 15 3.29808 15C3.01923 15 2.89423 14.7732 2.89423 14.5274C2.89423 14.4612 2.90385 14.4045 2.91346 14.3384L3.74038 9.61248L0.240385 6.26654C0.125 6.14367 0 5.98299 0 5.81285C0 5.5293 0.298077 5.41588 0.538462 5.37807L5.36539 4.68809L7.52885 0.387524C7.61539 0.207939 7.77885 0 8 0C8.22115 0 8.38462 0.207939 8.47115 0.387524L10.6346 4.68809L15.4615 5.37807C15.6923 5.41588 16 5.5293 16 5.81285Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mb-0">5.00</p>
+                                    <p class="mb-0">Jun 9, 2024 - Jul 17, 2024</p>
+                                    <p class="mb-0">$20.00</p>
+                                </div>
+                                <p class="review-description">
+                                    "A good emerging young talented developer. It was great
+                                    working with him."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="Middle-area">
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">For Clients</li>
+                    <li>How to Hire</li>
+                    <li>Project Catalog</li>
+                    <li>Talent MarketPlace</li>
+                    <li>Contract To Hire</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">For Talent</li>
+                    <li>How to find work</li>
+                    <li>Direct Contracts</li>
+                    <li>Find freelance job in USA</li>
+                    <li>Find freelance job worldwide</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">Company</li>
+
+                    <li>Support</li>
+                    <li>About Us</li>
+                    <li>Security</li>
+                    <li>Contact US</li>
+                </ul>
+            </div>
+            <div
+                class="col-lg-1 col-md-6 col-12 col-sm-12 d-flex flex-column gap-2 justify-content-center align-items-center">
+                <img height="50px" width="50px" src="https://dvcsales.com/custom-assets/images/comingsoon_qr.png"
+                    alt="not" />
+                <img height="30px" width="100px" src="https://dvcsales.com/custom-assets/images/available_playstore.png"
+                    alt="not found" />
+                <img height="30px" width="100px" src="https://dvcsales.com/custom-assets/images/available_appstore.png"
+                    alt="not found" />
+            </div>
+            <div class="footer-end">
+                <a>© 2024 MyFreelancer.com® Global Inc.</a>
+                <a>Privacy Policy</a>
+                <a>Terms Of Service</a>
+                <a>Accessiblities</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

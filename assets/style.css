@@ -1,8 +1,8 @@
 :root{
 --primary:#4674C6;
 --secondary:#fff;
---font:"second";
---font2:"second";
+--font:'Sointua-Regular';
+--font2:'Sointua-Regular';
 --border1:#e9e9e9;
 --border2:#f9f9f9;
 --grey:#d9d9d9;
@@ -11,15 +11,23 @@
 --greyfont:rgb(103, 103, 103);
 --border-hover:#f1f1f1;
 ---third:#203864;
---online:#1dbf73;
+--online:#14a800;
 --selected-chat:#f5f5f5;
 
+}
+html{
+    scroll-behavior: smooth;
+    height: 100%;
 }
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    min-height: 100%;
+    display: flex;
+    font-family: var(--font);
+    flex-direction: column;
 
 }
 header{
@@ -41,14 +49,12 @@ width: 100%;
     position: relative;
     top: -2px;
 }
+
 @font-face {
-    font-family: "Bold";
-    src: url('assets/Fonts/NeueMontreal-Bold.otf');
-}
-@font-face {
-    font-family: "second";
-    src: url('assets/Fonts/Sointua-Regular.otf');
-}
+    font-family: 'Sointua-Regular';
+    src: url('Fonts/Sointua-Regular.otf');
+  }
+  
 
 .header-1 .second-container a{
     font-family: var(--font);
@@ -185,7 +191,7 @@ font-size: 14px;
 font-weight: 500;
 cursor: pointer;
 }
-.header-1 .col-lg-5 .account-options button , .section-1 button , .section-5 button, .register-page button, .section-11 .Continue-to-chat , #offcanvasRight2 .offcanvas-body .col-lg-4 button, .section-12 .filters-parent button , .section-13 .job-button button , .section-14 .button-group button {
+.header-1 .col-lg-5 .account-options button , .section-1 button , .section-5 button, .register-page button, .section-11 .Continue-to-chat , #offcanvasRight2 .offcanvas-body .col-lg-4 button, .section-12 .filters-parent button , .section-13 .job-button button , .section-14 .button-group button ,.section-17 .profile-parent .profile-head  button{
     font-size: 14px;
     font-family: var(--font);
     
@@ -336,6 +342,42 @@ section{
     }
 }
 @media only screen and (min-width:320px) and (max-width:550px){
+    .section-17 .profile-parent .profile-head .location-area p{
+        font-size: 12px !important;
+    }
+    .section-17 .profile-parent .profile-body .profile-title {
+        font-size: 21px !important;
+    }
+    .section-17 .profile-parent .profile-body .profile-information div{
+        width: 100% !important;
+    }
+    .section-17 .profile-parent .profile-body .profile-description {
+        font-size: 13px !important;
+    }
+    .section-17 .profile-parent .profile-body .gap-4{
+        justify-content: center !important;
+    }
+    .section-17 .profile-parent {
+        padding: 15px !important;
+    }
+    .section-17 .profile-parent .profile-head{
+        flex-wrap: wrap !important;
+    }
+    .section-17 .profile-parent .profile-head button{
+        margin-top: 15px;
+    }
+    #exampleModal2 .modal-body div textarea{
+width: 60% !important;
+    }
+    #exampleModal2 .modal-body div img {
+        width: 120px !important;
+    }
+    #exampleModal2 .term-box-main .term-box-input select, #exampleModal2 .term-box-main .term-box-input input{
+        width: 85px !important;
+    }
+    .categories-banner{
+        height: 140px !important;
+    }
     
     .section-15 .chat-parent .chat-area
     {
@@ -540,8 +582,30 @@ section{
     }
 }
 @media only screen and (min-width:1800px){
+    .section-12 .filters-parent{
+        margin-bottom: 25px;
+    }
+    #exampleModal2{
+        --bs-modal-width: 500px !important;
+    }
+    #exampleModal2 .term-box-main .term-box-input select, #exampleModal2 .term-box-main .term-box-input input{
+     width: 135px 
+    !important;
+    font-size: 14px !important;
+    }
+    #exampleModal2 .checkbox-area select  {
+        width:90px !important;
+        font-size: 12px 
+        !important;
+    }
+    #exampleModal2 .modal-body div textarea {
+        font-size: 14px !important;
+    }
+    #exampleModal2 .modal-body div textarea {
+        width: 70% !important;
+    }
     .section-15 .chat-area-main{
-        height: 470px !important;
+        height:600px !important;
     }
 .sec-2-img{
     height: 250px !important;
@@ -669,7 +733,7 @@ width: auto;
     
         .responsive-header div:nth-child(2) a{
             font-size: 14px;
-            font-family: "Bold";
+            font-family: var(--font);
             color: #000;
             text-decoration: none;
            
@@ -689,7 +753,7 @@ width: auto;
     .offcanvas-start .offcanvas-body ul li{
         display: flex;
         justify-content: space-between;
-        font-family: "Bold";
+        font-family: var(--font);
         margin-bottom: 50px;  
         border-bottom: 1px solid var(--grey);
         cursor: pointer;
@@ -1308,8 +1372,15 @@ font-size: 16px;
     font-family: var(--font);
     color: var(--grey2);
     margin-left: 25px;
+
+
+
 }
-.section-10 .gigs-pagination ul li.active{
+.section-10 .gigs-pagination ul .pagination-num{
+    border-bottom: 2px solid transparent;
+    padding: 0px 5px;
+}
+.section-10 .gigs-pagination ul .pagination-num.active ,.section-10 .gigs-pagination ul .pagination-num:hover {
     color: #000;
     padding: 0px 5px;
 border-bottom: 2px solid black;
@@ -1624,7 +1695,7 @@ border-bottom: 2px solid #000;
     font-family: var(--font);
     margin-bottom: 0px;
     font-weight: 530;
-    margin-top: -29px;
+    margin-top: -8px;
 }
 .section-12 .single-job-box .jobs-button{
     display: flex;
@@ -1740,7 +1811,7 @@ margin-top: 14%;
     margin-left: 10px;
     cursor: pointer;
     color: #fff;
-    font-weight: bold;
+    font-weight: var(--font);
 }
 .section-12 .selected-skills{
     width: 40%;
@@ -2043,6 +2114,7 @@ margin-bottom: 0px;
     flex-grow: 1;
     margin-top: 10px;
 }
+
 .chat-area-footer input{
     border-radius: 12px !important;
     border: 1px solid var(--grey);
@@ -2191,4 +2263,256 @@ height: 300px;
     font-family: var(--font);
     margin-left: 10px;
     font-size: 14px;
+}
+#exampleModal2 .modal-body h4{
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: 600;
+}
+#exampleModal2 .modal-body  div img{
+    height: 80px;
+    width: 130px;
+    border-radius: 8px;
+}
+#exampleModal2 .modal-body  div  textarea{
+    width: 75%;
+    height: 80px;
+    font-size: 12px;
+    font-family: var(--font);
+    color: #000;
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    outline: none;
+    padding-left:10px;
+}
+#exampleModal2{
+    --bs-modal-width: 600px;
+    z-index: 100000;
+}
+#exampleModal2 .term-box p{
+    text-align: center;
+    font-family: var(--font);
+    color: var(--greyfont);
+    font-size: 14px;
+}
+#exampleModal2 .term-box-main{
+    border: 1px solid var(--grey);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+#exampleModal2 .term-box-main .term-box-input{
+    display: flex;
+    flex-direction: column;
+}
+#exampleModal2 .term-box-main .term-box-input label{
+    font-size: 12px;
+    font-family: var(--font);
+    margin-bottom: 4px;
+}
+#exampleModal2 .term-box-main .term-box-input select , #exampleModal2 .term-box-main .term-box-input input{
+    border: 1.5px solid var(--grey);
+    outline: none;
+    height: 33px;
+    border-radius: 4px;
+    font-family: var(--font);
+    font-size: 12px !important;
+    width: 150px ;
+    background-color: #fff !important;
+    border-top-left-radius: 4px !important;
+    padding-left: 10px;
+    border-bottom-left-radius: 4px !important;
+
+}
+#exampleModal2 .checkbox-area label{
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-family: var(--font);
+}
+#exampleModal2 .checkbox-area input[type='checkbox']{
+    height: 14px;
+    width: 14px;
+}
+#exampleModal2 .checkbox-area  select{
+    border: 1.5px solid var(--grey)
+    ;border-radius: 4px;
+    border-top-left-radius: 4px !important;
+    padding-left: 10px;
+    border-bottom-left-radius: 4px !important;
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+}
+#exampleModal2  .button-area button{
+background-color: var(--primary);
+font-size: 13px;
+border-radius: 8px;
+border: none;
+outline :none;
+color: #fff;
+padding: 5px 14px;
+font-family: var(--font);
+
+}
+footer{
+    margin-top: auto;
+}
+.section-16 .topbar div{
+display: flex;
+justify-content: center;
+
+}
+.section-16 .topbar div a{
+   display: flex;
+   gap: 7px;
+   justify-content: normal;
+   padding:7px 14px;
+   font-size: 14px;
+   cursor: pointer;
+   width: 200px;
+   text-align: center;
+   align-items: center;
+   border-left: 1.5px solid var(--border-3);
+   border-bottom: 1.5px solid var(--grey);
+
+}
+.section-16 .topbar div a.active , .section-16 .topbar div a:hover{
+    text-decoration:none ;
+    color: var(--primary);
+
+    
+
+    border-bottom: 1.5px solid var(--primary);
+    background-color: var(--selected-chat);
+    transition: all .3s ease-in-out;
+}
+.section-16 .dashboard-toggle-switch{
+border: 1.5px solid var(--grey);
+width: 180px;
+border-radius: 8px;
+}
+.section-16 .dashboard-toggle-switch button{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 50%;
+    border-radius: 8px;
+    background-color:var(--secondary);
+}
+.section-16 .dashboard-toggle-switch button.active{
+    background-color: var(--primary);
+    color: #fff;
+    transition: all .15s ease-in-out;
+}
+.section-17 .profile-parent{
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--grey);
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.section-17 .profile-parent .profile-image img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.section-17 .profile-parent .profile-image::after{
+    position: absolute;
+    content: "";
+    width: 18px;
+    border-radius: 50%;
+    height: 18px;
+    background-color: var(--online);
+    top: 80%;
+    border: 3px solid var(--secondary);
+    left: 75%;
+}
+.section-17 .profile-parent .profile-head h4{
+    font-size: 28px;
+}
+.section-17 .profile-parent .profile-head .location-area p{
+    color:var(--greyfont);
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.section-17 .profile-parent .profile-head .location-area i{
+    color:var(--greyfont)
+
+}
+.section-17 .profile-parent .profile-body .earning-boxes{
+    display: flex;
+    flex-direction: column;
+
+} 
+.section-17 .profile-parent .profile-body .earning-boxes p{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.section-17 .profile-parent .profile-body .earning-boxes p:nth-child(1){
+    font-weight: 800;
+    font-size: 18px;
+}
+.section-17 .profile-parent .profile-body .earning-boxes p:nth-child(2){
+    color: var(--greyfont);
+    font-size: 16px;
+}
+.section-17 .profile-parent .profile-body .profile-title{
+    font-size: 24px;
+    margin-top: 24px;
+}
+.section-17 .profile-parent .profile-body .profile-description{
+    font-size: 14px;
+    color: var(--greyfont);
+    margin-top: 15px;
+}
+.section-17 .profile-parent .profile-body  .profile-information h3{
+    font-size: 22px;
+}
+.section-17 .profile-parent .profile-body  .profile-information div a{
+    background-color: var(--grey);
+    color: var(--greyfont);
+    border-radius: 26px;
+    padding: 5px 20px;
+display: inline-block;
+margin-bottom:8px;
+margin-left: 5px;
+    font-size: 14px;
+    text-decoration:none ;
+}
+.section-17 .profile-languages{
+    font-size: 14px;
+}
+.section-17 .fa-circle-check{
+    font-size: 18px;
+    position: relative;
+    left: 8px;
+    top: -2px;
+    color:var(--primary);
+}
+.section-17 .profile-reviews h4{
+    font-size: 18px;
+text-decoration: underline;
+}
+.section-17 .profile-reviews{
+    padding: 20px 25px ;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    width: 600px;
+}
+.section-17 .profile-reviews svg{
+    height: 14px;
+    width: 14px;
+    position: relative;
+    top: -3px;
+    fill: #DEBE1A;
+
+}
+.section-17 .profile-reviews p{
+    font-size: 14px;
+}
+.section-17 .profile-reviews .review-description{
+    font-size: 14px;
+    margin-top: 10px;
+    color:var(--greyfont)
 }
