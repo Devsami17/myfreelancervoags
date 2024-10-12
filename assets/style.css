@@ -507,10 +507,11 @@ width: 60% !important;
         padding: 0 6px !important;
     }
    .gigs-area .single-gig-box{
-        width: 90% !important;
+        width: 85% !important;
     }
    .gigs-area .single-gig-box .image-area img{
         height: 200px !important;
+        width: auto !important;
         
     }
    .filter-parent-one div:nth-child(1)
