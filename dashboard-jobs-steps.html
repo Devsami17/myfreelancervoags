@@ -131,37 +131,95 @@
                </div>
              </div>
                    </header>
-     <main class="register-page">
-<h1 class="text-center">
-Log in to MyFreelancer
-</h1>
-<div class="container">
-    <div class="input-parent">
-        <form>
-
-
-    <div class="input-group">
-<label>Username or Email</label>
-<input type="text" placeholder="@example_account" required>
-    </div>
-    <div class="input-group">
-        <label>Password</label>
-        <input  type="text" required>
-            </div>
-
-                            <div class="d-flex justify-content-center mt-4">
-                                <button type="submit">Continue to my account</button>
-                            </div>
-                        </form>
-                            <div class="d-flex justify-content-center mt-3">
-                             <p>Dont have an account?<a href="register.html"> Register now</a></p>
-                            </div>
-                        </div>
-                     
-</div>
-
-     </main>
+  
      
+
+<main>
+    <section class="section-16 container mb-5">
+<h1>Post a Job</h1>
+<div class="steps-add-job">
+    <div class="mt-4">
+        <label for="" class="w-100">Give your job a title :</label>
+        <input type="text" placeholder="Looking for a experience PHP developer">
+    </div>
+    <div class="mt-4">
+        <label for="" class="w-100">Describe the job in details :</label>
+        <textarea name="" id="" cols="30" rows="10">Compose an epic...</textarea>
+    </div>
+    <div class="mt-4">
+        <label for="" class="w-100">What work do you need to get done:</label>
+        <div class="d-flex gap-lg-4 gap-1 gap-sm-1 gap-md-4 flex-wrap">
+
+       
+        <div class="category-selector mt-3 d-flex flex-column">
+            <a href="">Graphic & Design</a><a href="">Video & Animation</a><a href="">Business</a>
+        <a href="">Personal Growth</a>
+        </div> 
+        <div class="category-selector mt-3 d-flex flex-column">
+            <a href="">
+                Programming & Tech</a><a href="">Writing & Translation</a><a href="">Finance</a>
+                <a href="">Consulting</a>
+        </div> 
+        <div class="category-selector mt-3 d-flex flex-column">
+            <a href="">Digital Marketing</a><a href="">
+                Music & Audio</a><a href="">AI Services</a>
+                <a href="">Photography</a>
+        </div> 
+    </div>
+    </div>
+    <div class="mt-4">
+        <label for="" class="w-100">Fixed Price :</label>
+       <select name="" id="">
+
+        <option value="">Under $250</option>
+<option value="">$250 to $500</option>
+<option value="">$500 to $1,000</option>
+<option value="">$1,000 to $2,500</option>
+<option value="">$2,500 to $5,000</option>
+<option value="">$5,000 to $10,000</option>
+<option value="">$10,000 to $25,000</option>
+<option value="">Over $25,000</option>
+<option value="">Not sure/confidential</option>
+
+
+
+       </select>
+    </div>
+    <div class="mt-4">
+        <label for="" class="w-100">Select your preferences :</label>
+    <div class="mt-4 d-flex flex-wrap ">
+        <div>
+            <label for="">Visible to:</label>
+            <select name="" id="">
+                <option value="" hidden>Select any one</option>
+                <option value="">MyFreelancer Freelancers </option>
+                <option value="">Everyone</option>
+                <option value="">Invite Only (on myfreelancer)</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Get Quotes Till:</label>
+<input type="date">
+        </div>
+        <div>
+            <label for="">Location:</label>
+            <select name="" id="">
+                <option value="" hidden>Select any one</option>
+                <option value="">Worldwide</option>
+                <option value="">Specific Location</option>
+                <option value="">Same Country</option>
+            </select>
+        </div>
+    </div>
+    <div class="mt-4    ">
+        <button>Submit Job</button>
+    </div>
+    </div>
+</div>
+    </section>
+</main>
+
+
      <footer class="container">
         <div class="Middle-area">
             <div class="col-lg-3 col-md-6 col-12 col-sm-12">
@@ -213,7 +271,7 @@ Log in to MyFreelancer
         
             </div>
         </div>
-                </footer> 
+                </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -226,7 +284,81 @@ Log in to MyFreelancer
             crossorigin="anonymous"
         ></script>
         <script>
-             
+  const links = document.querySelectorAll('.category-selector a');
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            links.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+            document.querySelectorAll('.gig-tab').forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Remove 'active' class from all tabs and tables
+                    document.querySelectorAll('.gig-tab').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('.gig-table').forEach(table => table.classList.remove('active-table'));
+        
+                 
+                    this.classList.add('active');
+                    const selectedTab = this.getAttribute('data-tab');
+                    document.getElementById(selectedTab).classList.add('active-table');
+        
+               
+                    const statusTitle = this.textContent.trim().toUpperCase() + " BILLBOARDS";
+                    document.getElementById('gig-status-title').textContent = statusTitle;
+                });
+            });
+  
+            var buttons = document.querySelectorAll('.dashboard-toggle-switch button'); 
+    buttons.forEach((item) => {
+        item.addEventListener('click', function() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            if (item.id === 'buyButton') {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Jobs';
+                document.getElementById('myOrders').onclick=window.location='dashboard-jobs.html';
+            } else {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+            }
+        });
+    });
+
+    var doc = document.getElementById('topbar-content');
+    var buttons = document.querySelectorAll('.dashboard-toggle-switch button');
+
+    // Function to set default state on page load
+    function setDefaultState() {
+        document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+        document.getElementById('myOrders').setAttribute('href', 'dashboard-freelancer-billboards.html');
+    }
+
+    // Set the default state when the page loads
+    setDefaultState();
+
+    buttons.forEach((item) => {
+        item.addEventListener('click', function() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            if (item.id === 'buyButton') {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-user"></i>My Jobs';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-jobs.html');
+                // Hide the extra link when 'Buying' is selected
+                document.getElementById('extraFeature').style.display = 'none';
+            } else {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-billboards.html');
+                // Show the extra link when 'Selling' is selected
+                document.getElementById('extraFeature').style.display = 'flex';
+            }
+        });
+    });
            
         </script>
         <script src="assets/script.js"></script>

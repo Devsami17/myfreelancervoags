@@ -131,37 +131,181 @@
                </div>
              </div>
                    </header>
-     <main class="register-page">
-<h1 class="text-center">
-Log in to MyFreelancer
-</h1>
-<div class="container">
-    <div class="input-parent">
-        <form>
-
-
-    <div class="input-group">
-<label>Username or Email</label>
-<input type="text" placeholder="@example_account" required>
-    </div>
-    <div class="input-group">
-        <label>Password</label>
-        <input  type="text" required>
-            </div>
-
-                            <div class="d-flex justify-content-center mt-4">
-                                <button type="submit">Continue to my account</button>
-                            </div>
-                        </form>
-                            <div class="d-flex justify-content-center mt-3">
-                             <p>Dont have an account?<a href="register.html"> Register now</a></p>
-                            </div>
-                        </div>
-                     
-</div>
-
-     </main>
+  
      
+
+<main>
+    <section class="section-16 container mb-5">
+        <div class="topbar">
+            <div id="topbar-content">
+                  <a href="dashboard-freelancer.html"><i class="fa-solid fa-address-card"></i>Contact Information</a>
+                 <a class="active" id="myOrders" href="dashboard-freelancer-billboards.html" ><i class="fa-solid fa-gift"></i>My Orders</a>
+                 <a href="dashboard-freelancer-screenidentity.html"><i class="fa-solid fa-display"></i>Screen Identity</a>
+                 <a id="extraFeature" href="dashboard-freelancer-verification.html"><i class="fa-solid fa-user-check"></i>Verifications</a>
+                 <a  href="dashboard-freelancer-emailpreferences.html"><i class="fa-solid fa-paper-plane"></i>Email Preference</a>
+                 
+                 <a href="dashboard-freelancer-password.html"><i class="fa-solid fa-lock"></i>Password</a>
+                
+
+ <div class="dashboard-toggle-switch">
+     <button id="buyButton" >Buying</button>
+     <button class="active">Selling</button>
+ </div>
+ 
+            </div>
+            
+        
+         </div>
+        <div class="gigs-filter">
+            <div class="d-flex gap-5">
+                <a href="#" class="gig-tab active" data-tab="active-gigs">Active <div class="orders-number">2</div></a>
+                <a href="#" class="gig-tab" data-tab="pending-gigs">Pending</a>
+                <a href="#" class="gig-tab" data-tab="draft-gigs">Draft</a>
+                <a href="#" class="gig-tab" data-tab="denied-gigs">Denied</a>
+                <a href="#" class="gig-tab" data-tab="paused-gigs">Paused</a>
+            </div>
+            <div>
+                <button class="create-new-billboard" onclick="window.location='dashboard-freelancer-Billboard-steps.html'">CREATE A NEW BILLBOARD</button>
+            </div>
+        </div>
+        
+        <div class="gigs-table-parent">
+            <div class="gigs-header">
+                <h6 class="fw-bold mb-0" id="gig-status-title">ACTIVE BILLBOARDS</h6>
+                <select name="" id="">
+                    <option value="">LAST 7 DAYS</option>
+                    <option value="">LAST 14 DAYS</option>
+                    <option value="" selected>LAST 30 DAYS</option>
+                    <option value="">LAST 2 MONTHS</option>
+                    <option value="">LAST 3 MONTHS</option>
+                </select>
+            </div>
+            <div class="gigs-table-body">
+                <!-- Active Gigs Table -->
+                <div class="gig-table active-table" id="active-gigs">
+                    <table>
+                        <tr>
+                            <th>GIG</th>
+                            <th>IMPRESSIONS</th>
+                            <th>CLICKS</th>
+                            <th>ORDERS</th>
+                            <th>CANCELLATIONS</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img height="40px" class="me-3" width="auto" src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/381932271/original/2ef9d01288dfef80e58de7e4dade0775b061aec5.jpg" alt="not found">
+                                be your expert core PHP, laravel, and wordpress developer
+                            </td>
+                            <td>42</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0%</td>
+                            <td>
+                                <button class="options" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Preview</a></li>
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Pause</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    </ul>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </table>
+                </div>
+        
+                <!-- Pending Gigs Table -->
+                <div class="gig-table" id="pending-gigs">
+                    <table>
+                        <tr>
+                            <th>GIG</th>
+                            <th>IMPRESSIONS</th>
+                            <th>CLICKS</th>
+                            <th>ORDERS</th>
+                            <th>CANCELLATIONS</th>
+                            <th></th>
+                        </tr>
+                    <tr>
+                        <td>
+                            <p>No pendings Billboard to show.</p>
+
+                        </td>
+                    </tr>
+                        <!-- More rows as needed -->
+                    </table>
+                </div>
+        
+                <!-- Draft Gigs Table -->
+                <div class="gig-table" id="draft-gigs">
+                    <table>
+                        <tr>
+                            <th>GIG</th>
+                            <th>IMPRESSIONS</th>
+                            <th>CLICKS</th>
+                            <th>ORDERS</th>
+                            <th>CANCELLATIONS</th>
+                            <th></th>
+                        </tr>
+                    <tr>
+                        <td>
+                            <p>No drafts Billboard to show.</p>
+
+                        </td>
+                    </tr>
+                        <!-- More rows as needed -->
+                    </table>
+                </div>
+        
+                <!-- Denied Gigs Table -->
+                <div class="gig-table" id="denied-gigs">
+                    <table>
+                        <tr>
+                            <th>GIG</th>
+                            <th>IMPRESSIONS</th>
+                            <th>CLICKS</th>
+                            <th>ORDERS</th>
+                            <th>CANCELLATIONS</th>
+                            <th></th>
+                        </tr>
+                    <tr>
+                        <td>
+                            <p>No denied Billboard to show.</p>
+
+                        </td>
+                    </tr>
+                        <!-- More rows as needed -->
+                    </table>
+                </div>
+        
+                <!-- Paused Gigs Table -->
+                <div class="gig-table" id="paused-gigs">
+                    <table>
+                        <tr>
+                            <th>GIG</th>
+                            <th>IMPRESSIONS</th>
+                            <th>CLICKS</th>
+                            <th>ORDERS</th>
+                            <th>CANCELLATIONS</th>
+                            <th></th>
+                        </tr>
+                    <tr>
+                        <td>
+                            <p>No paused Billboard to show.</p>
+
+                        </td>
+                    </tr>
+                        <!-- More rows as needed -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
      <footer class="container">
         <div class="Middle-area">
             <div class="col-lg-3 col-md-6 col-12 col-sm-12">
@@ -213,7 +357,7 @@ Log in to MyFreelancer
         
             </div>
         </div>
-                </footer> 
+                </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -226,7 +370,57 @@ Log in to MyFreelancer
             crossorigin="anonymous"
         ></script>
         <script>
-             
+
+            document.querySelectorAll('.gig-tab').forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Remove 'active' class from all tabs and tables
+                    document.querySelectorAll('.gig-tab').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('.gig-table').forEach(table => table.classList.remove('active-table'));
+        
+                 
+                    this.classList.add('active');
+                    const selectedTab = this.getAttribute('data-tab');
+                    document.getElementById(selectedTab).classList.add('active-table');
+        
+               
+                    const statusTitle = this.textContent.trim().toUpperCase() + " BILLBOARDS";
+                    document.getElementById('gig-status-title').textContent = statusTitle;
+                });
+            });
+  
+            var doc = document.getElementById('topbar-content');
+    var buttons = document.querySelectorAll('.dashboard-toggle-switch button');
+
+    // Function to set default state on page load
+    function setDefaultState() {
+        document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+        document.getElementById('myOrders').setAttribute('href', 'dashboard-freelancer-billboards.html');
+    }
+
+    // Set the default state when the page loads
+    setDefaultState();
+
+    buttons.forEach((item) => {
+        item.addEventListener('click', function() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            if (item.id === 'buyButton') {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-user"></i>My Jobs';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-jobs.html');
+                // Hide the extra link when 'Buying' is selected
+                document.getElementById('extraFeature').style.display = 'none';
+            } else {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-billboards.html');
+                // Show the extra link when 'Selling' is selected
+                document.getElementById('extraFeature').style.display = 'flex';
+            }
+        });
+    });
            
         </script>
         <script src="assets/script.js"></script>

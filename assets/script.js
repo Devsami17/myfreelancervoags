@@ -124,3 +124,4 @@ function updateCharacterCount() {
   
   document.getElementById('charCount').textContent = charactersLeft + ' characters left';
 };
+   

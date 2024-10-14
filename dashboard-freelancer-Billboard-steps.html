@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>My Freelancer</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" type="image/x-icon" href="https://myfreelancer.voags.com/fav.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body >
+        <header>
+            <div class="header-1 container">
+           <div class="col-lg-1">
+             <h5 class="main-logo-header" onclick="window.location='index.html'">MyFreelancer<span>.</span></h5>
+           </div>
+           <div class="col-lg-5 second-container">
+               <a href="Hire-Talent.html">Hire Talent</a>
+               <a href="FindWork.html">Find Work</a>
+               <a href="https://support.myfreelancer.com/">Support</a>
+               <a href="browse-categories.html">Browse Categories</a>
+           </div>
+           <div class="col-lg-5 third-container">
+               <div class="input-box">
+                   <div class="search-bar">
+           <div class="search-bar-icon">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img"><path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M10.688 18.377a7.688 7.688 0 100-15.377 7.688 7.688 0 000 15.377zm5.428-2.261L21 21"></path></svg>
+           </div>
+           <div class="search-bar-input">
+               <input type="text" placeholder="Search">
+           </div>
+                   </div>
+                 
+               </div>
+               <div class="account-options">
+                   <span onclick="window.location='Login.html'">Log in</span>
+                   <button onclick="window.location='register.html'">Sign Up</button>
+               </div>
+           </div>
+            </div>
+            <div class="responsive-header container">
+               <div class="d-flex gap-2 align-items-center">
+           <a class="text-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-list"></i></a>
+           <h5 class="main-logo-header" onclick="window.location='index.html'">MyFreelancer<span>.</span></h5>
+           
+               </div>
+               <div class="d-flex gap-3 justify-content-normal align-items-center ">
+                   <a href="register.html">Sign Up</a>
+              <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img"><path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M10.688 18.377a7.688 7.688 0 100-15.377 7.688 7.688 0 000 15.377zm5.428-2.261L21 21"></path></svg></a>
+           
+           
+               </div>
+            </div>
+            <div class="header-2">
+               <div class="slider-container container-xxl">
+                   <button id="prevBtn" class="slider-btn prev-btn"><i class="bi bi-caret-left-fill"></i></button>
+                   <div class="slider-wrapper">
+                     <ul class="slider">
+                       <li onclick="window.location='Category-Programming&Tech.html'">Programming & Tech</li>
+                       <li onclick="window.location='Category-DigitalMarketing.html'">Digital Marketing</li>
+                       <li onclick="window.location='Category-Video&Animation.html'">Video & Animation</li>
+                       <li onclick="window.location='Category-Writing&Translation.html'">Writing & Translation</li>
+                       <li onclick="window.location='Category-Music&Audio.html'">Music & Audio</li>
+                       <li onclick="window.location='Category-Business.html'">Business</li>
+                       <li onclick="window.location='Category-Finance.html'">Finance</li>
+                       <li onclick="window.location='Category-AIServices.html'">AI Services</li>
+                       <li onclick="window.location='Category-PersonalGrowth.html'">Personal Growth</li>
+                       <li onclick="window.location='Category-Consulting.html'">Consulting</li>
+                       <li onclick="window.location='Category-Photography.html'">Photography</li>
+                     </ul>
+                   </div>
+                   <button id="nextBtn" class="slider-btn next-btn"><i class="bi bi-caret-right-fill"></i></button>
+                 </div>
+                 
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+               <div class="offcanvas-header">
+                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">  <h5 class="main-logo-header" onclick="window.location='index.html'">MyFreelancer<span>.</span></h5>
+               </h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+           <ul>
+               <li onclick="window.location='Hire-Talent.html'">Hire Talent
+                  
+               </li>
+               <li onclick="window.location='FindWork.html'">Find Work
+                  
+               </li>
+               <li onclick="window.location='https://support.myfreelancer.com/'">Support
+                  
+               </li>
+               <li onclick="window.location='browse-categories.html'">Browse Categories
+                  
+               </li>
+           </ul>
+               </div>
+             </div>
+             <div class="offcanvas offcanvas2 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header">
+                 <h5 class="offcanvas-title" id="offcanvasRightLabel"><input type="search" placeholder="Search"></h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+             <div>
+               
+                   <ul>
+                       <li id="projects" class="active">Projects</li>
+                       <li id="jobs">Jobs</li>
+                    
+                   
+               </ul>
+             </div>
+               </div>
+             </div>
+                   </header>
+  
+     
+
+<main>
+    <section class="section-16 container mb-5">
+        <div class="topbar">
+            <div id="topbar-content">
+                  <a href="dashboard-freelancer.html"><i class="fa-solid fa-address-card"></i>Contact Information</a>
+                 <a class="active" id="myOrders" href="dashboard-freelancer-billboards.html" ><i class="fa-solid fa-gift"></i>My Orders</a>
+                 <a href="dashboard-freelancer-screenidentity.html"><i class="fa-solid fa-display"></i>Screen Identity</a>
+                 <a id="extraFeature" href="dashboard-freelancer-verification.html"><i class="fa-solid fa-user-check"></i>Verifications</a>
+                 <a  href="dashboard-freelancer-emailpreferences.html"><i class="fa-solid fa-paper-plane"></i>Email Preference</a>
+                 
+                 <a href="dashboard-freelancer-password.html"><i class="fa-solid fa-lock"></i>Password</a>
+                
+
+ <div class="dashboard-toggle-switch">
+     <button id="buyButton" >Buying</button>
+     <button class="active">Selling</button>
+ </div>
+ 
+            </div>
+            
+        
+         </div>
+        <div class="contact-info-box">
+            <div class="header-billboard">
+                <button class="billboard-tab active" data-content="overview-billboard">Overview</button>
+                <button class="billboard-tab" data-content="description-billboard">Description</button>
+                <button class="billboard-tab" data-content="gallery-billboard">Gallery</button>
+            </div>
+            <div class="body-step body" id="overview-billboard">
+                <div class="billboard-box">
+                    <div class="col-6">
+                        <h6>Billboard Title</h6>
+                        <p>As your Billboard storefront, your title is the most important place to include keywords that buyers would likely use to search for a service like yours.</p>
+                    </div>
+        
+                    <div class="col-5">
+                        <textarea id="myTextarea" maxlength="80"></textarea>
+                        <span id="charCount">0/80 max</span>
+                    </div>
+                </div>
+                <div class="billboard-box mt-4">
+                    <div class="col-6">
+                        <h6>Category</h6>
+                        <p>Choose the category and sub-category most suitable for your Billboard</p>
+                    </div>
+        
+                    <div class="col-5 d-flex justify-content-between">
+                        <select name="" id="">
+                            <option value="" selected>Programming & Tech</option>
+                            <option value="">Graphic & Design</option>
+                            <option value="">Business</option>
+                            <option value="">Digital Marketing</option>
+                            <option value="">Music & Audio</option>
+                            <option value="">Personal Growth</option>
+                            <option value="">Video & Animations</option>
+                            <option value="">Writing & Translation</option>
+                            <option value="">Photography</option>
+                            <option value="">AI Services</option>
+                            <option value="">Finance</option>
+                            <option value="">Consultation</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Website Development</option>
+                            <option value="">Software Development</option>
+                            <option value="">Application Development</option>
+                            <option value="">IOT Development</option>
+                            <option value="">Script Development</option>
+                            <option value="">ChatBot Development</option>
+                            <option value="">AI Development</option>
+                            <option value="">Blockchain Development</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="billboard-box mt-4">
+                    <div class="col-6">
+                        <h6>Price</h6>
+                        <p>Kindly enter a suitable price that fits your services.</p>
+                    </div>
+        
+                    <div class="col-5">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">$</span>
+                            <input type="number" class="w-50" placeholder="Minimum $10.00" aria-label="Price" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="billboard-box mt-4">
+                    <div class="col-6">
+                        <h6>Search Tags</h6>
+                        <p>Tag your Billboard with buzz words that are relevant to the services you offer. Use all 5 tags to get found.</p>
+                    </div>
+        
+                    <div class="col-5">
+                        <div class="tags-input" id="tags-input">
+                            <input type="text" id="tag-input" placeholder="Add a tag">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="save-continue">Save and continue</button>
+                </div>
+            </div>
+            <div class="body-step body" id="description-billboard">
+                <p>The Billboard Description serves as a vital introduction to your service, offering a clear and concise overview of what clients can expect. Highlight the unique features and benefits that set you apart, ensuring potential clients understand the value you provide.</p>
+              <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+                <div>
+                    <button class="save-continue">Save and continue</button>
+                    <button class="previous cancel-buttton">Previous</button>
+                </div>
+            </div>
+            <div class="body-step body" id="gallery-billboard">
+              <h5 class="fw-bolder">Showcase Your Services In A Billboard Gallery
+            </h5>
+                <p>Encourage buyers to choose your Billboard by featuring a variety of your work.</p>
+                <p>Images (up to 3)<br>
+                    Get noticed by the right buyers with visual examples of your services.</p>
+                <div>
+                    <div class="image-box" onclick="document.getElementById('file-input1').click()">
+                        <img id="image1" src="" alt="Image 1" />
+                        <input type="file" id="file-input1" accept="image/*" onchange="loadImage(event, 'image1')" />
+                    </div>
+                    <div class="image-box" onclick="document.getElementById('file-input2').click()">
+                        <img id="image2" src="" alt="Image 2" />
+                        <input type="file" id="file-input2" accept="image/*" onchange="loadImage(event, 'image2')" />
+                    </div>
+                    <div class="image-box" onclick="document.getElementById('file-input3').click()">
+                        <img id="image3" src="" alt="Image 3" />
+                        <input type="file" id="file-input3" accept="image/*" onchange="loadImage(event, 'image3')" />
+                    </div>
+                </div>
+                    <div>
+                    <button onclick="window.location='dashboard-freelancer-billboards.html'" >Publish Billboard</button>
+                    <button class="previous cancel-buttton">Previous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+     <footer class="container">
+        <div class="Middle-area">
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">
+                        For Clients
+                    </li>
+                    <li>How to Hire</li>
+                    <li>Project Catalog</li>
+                    <li>Talent MarketPlace</li>
+                    <li>Contract To Hire</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">
+                        For Talent
+                    </li>
+                    <li>How to find work</li>
+                    <li>Direct Contracts</li>
+                    <li>Find freelance job in USA</li>
+                    <li>Find freelance job worldwide</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                <ul>
+                    <li class="active">
+                        Company
+                    </li>
+                    
+                    <li>Support</li>
+                    <li>About Us</li>
+                    <li>Security</li>
+                    <li>Contact US</li>
+                    
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-6 col-12 col-sm-12 d-flex flex-column gap-2 justify-content-center align-items-center">
+              <img height="50px" width="50px" src="https://dvcsales.com/custom-assets/images/comingsoon_qr.png" alt="not">
+              <img height="30px" width="100px"  src="https://dvcsales.com/custom-assets/images/available_playstore.png" alt="not found">
+              <img  height="30px" width="100px" src="https://dvcsales.com/custom-assets/images/available_appstore.png" alt="not found">
+            </div>
+            <div class="footer-end">
+        
+            <a>© 2024 MyFreelancer.com® Global Inc.</a>
+            <a>Privacy Policy</a>
+            <a>Terms Of Service</a>
+            <a>Accessiblities</a>
+        
+            </div>
+        </div>
+                </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+  <script>        function loadImage(event, imageId) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById(imageId).src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+}
+     const maxTags = 5;
+    const tagsInput = document.getElementById('tags-input');
+    const tagInput = document.getElementById('tag-input');
+    let tags = [];
+
+    function addTag(tag) {
+        if (tags.length >= maxTags || tags.includes(tag)) return;
+        tags.push(tag);
+        renderTags();
+        tagInput.value = '';
+    }
+
+    function removeTag(tag) {
+        tags = tags.filter(t => t !== tag);
+        renderTags();
+    }
+
+    function renderTags() {
+        tagsInput.innerHTML = '';
+        tags.forEach(tag => {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('tag');
+            tagElement.textContent = tag;
+
+            const closeElement = document.createElement('span');
+            closeElement.classList.add('close');
+            closeElement.textContent = 'x';
+            closeElement.onclick = () => removeTag(tag);
+
+            tagElement.appendChild(closeElement);
+            tagsInput.appendChild(tagElement);
+        });
+        tagsInput.appendChild(tagInput);
+    }
+
+    tagInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+            const tag = tagInput.value.trim();
+            if (tag) {
+                addTag(tag);
+            }
+        }
+    });
+
+    tagsInput.addEventListener('click', () => {
+        tagInput.focus();
+    });
+     const textarea = document.getElementById('myTextarea');
+        const charCount = document.getElementById('charCount');
+        const maxLength = 80;
+
+        textarea.addEventListener('input', () => {
+            const currentLength = textarea.value.length;
+            charCount.textContent = `${currentLength}/${maxLength} max`;
+
+            if (currentLength > maxLength) {
+                textarea.value = textarea.value.substring(0, maxLength);
+            }
+        });
+ 
+   document.querySelectorAll('.billboard-tab').forEach(tab => {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+            switchTab(this.getAttribute('data-content'));
+        });
+    });
+
+
+    function switchTab(contentId) {
+      
+        document.querySelectorAll('.billboard-tab').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('.body').forEach(content => content.style.display = 'none');
+
+    
+        document.querySelector(`.billboard-tab[data-content="${contentId}"]`).classList.add('active');
+        document.getElementById(contentId).style.display = 'block';
+    }
+
+
+    document.querySelectorAll('.save-continue').forEach(button => {
+        button.addEventListener('click', function () {
+    
+            const activeTab = document.querySelector('.billboard-tab.active').getAttribute('data-content');
+            if (activeTab === 'overview-billboard') {
+                switchTab('description-billboard');
+            } else if (activeTab === 'description-billboard') {
+                switchTab('gallery-billboard');
+            }
+        });
+    });
+
+
+    document.querySelectorAll('.previous').forEach(button => {
+        button.addEventListener('click', function () {
+          
+            const activeTab = document.querySelector('.billboard-tab.active').getAttribute('data-content');
+            if (activeTab === 'description-billboard') {
+                switchTab('overview-billboard');
+            } else if (activeTab === 'gallery-billboard') {
+                switchTab('description-billboard');
+            }
+        });
+    });
+
+   
+    switchTab('overview-billboard');
+    var doc = document.getElementById('topbar-content');
+    var buttons = document.querySelectorAll('.dashboard-toggle-switch button');
+
+    // Function to set default state on page load
+    function setDefaultState() {
+        document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+        document.getElementById('myOrders').setAttribute('href', 'dashboard-freelancer-billboards.html');
+    }
+
+    // Set the default state when the page loads
+    setDefaultState();
+
+    buttons.forEach((item) => {
+        item.addEventListener('click', function() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            if (item.id === 'buyButton') {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-user"></i>My Jobs';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-jobs.html');
+                // Hide the extra link when 'Buying' is selected
+                document.getElementById('extraFeature').style.display = 'none';
+            } else {
+                document.getElementById('myOrders').innerHTML = '<i class="fa-solid fa-gift"></i>My Orders';
+                document.getElementById('myOrders').setAttribute('href', 'dashboard-billboards.html');
+                // Show the extra link when 'Selling' is selected
+                document.getElementById('extraFeature').style.display = 'flex';
+            }
+        });
+    });
+  </script>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
